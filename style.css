@@ -89,7 +89,7 @@ canvas {
   width: 450px;
   opacity: 0;
   left: -400px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.1s ease-in-out;
   position: relative;
 }
 
