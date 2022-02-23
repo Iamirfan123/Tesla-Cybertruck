@@ -73,7 +73,7 @@ canvas {
 }
 
 .product-info {
-  top: 44%;
+  top: 0;
   position: fixed;
   display: flex;
   align-items: center;
@@ -83,29 +83,235 @@ canvas {
   flex-direction: column;
   width: 50vw;
   z-index: 2;
+  display: inline;
 }
 
 .product-info div.product-info__description {
-  width: 450px;
+  width: 200%;
   opacity: 0;
-  left: -400px;
+  height: 100%;
   transition: all 0.1s ease-in-out;
   position: relative;
+  text-align: center;
+  
 }
 
 .spacer {
-  height: 700px;
+  height: 100%;
 }
 
 .product-info div.product-info__description h2 {
   position: absolute;
   top: 0;
-  transition: 0.2s;
+  left: -150px;
   color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 28px;
+  font-size: 25px;
   letter-spacing: 0;
   line-height: 35px;
   padding-left: 10px;
-  border-left: 3px solid #d2ff02;
+  padding-top: 600px;
+  
 }
+.product-info div.product-info__description h2 button {
+  position: absolute;
+  top: 650px;
+  left: 150px;
+  background: red;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  letter-spacing: 0;
+  align-items: center;
+  margin: 0 auto;
+  border: 0;
+  padding: 12px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+  text-decoration: none;
+  padding-left: 10px;
+  
+  white-space: nowrap;
+}
+product-info div.product-info__description h2 button:hover{
+  background: white;
+  color: black;
+}
+.product-info div.product-info__description h3 {
+  position: absolute;
+  top: 0;
+  left: 450px;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  letter-spacing: 0;
+  line-height: 35px;
+  padding-left: 10px;
+  padding-bottom: 1000px;
+  text-align: center;
+  text-decoration: underline;
+  
+}
+.product-info div.product-info__description p {
+  position: absolute;
+  top: 0;
+  left: 380px;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: 35px;
+  padding-left: 0;
+ padding-top: 80px;
+ display: inline;
+ text-align: center;
+}
+.product-info div.product-info__description h4 {
+  position: absolute;
+  top: 0;
+  left: -100px;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: 35px;
+  
+ padding-top: 80px;
+ display: inline;
+ text-align: center;
+}
+.product-info div.product-info__description h5 {
+  position: absolute;
+  top: 0;
+  left: -300px;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: 25px;
+  padding-left:-100px;
+ padding-top: 300px;
+ display: inline;
+ text-align: center;
+}
+.product-info div.product-info__description h6 {
+  position: absolute;
+  top: 0;
+  left: 500px;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: 25px;
+  
+ padding-top: 700px;
+ display: inline;
+ text-align: center;
+}
+.product-info div.product-info__description h6 button {
+  position: absolute;
+  top: 730px;
+  left: 350px;
+  background: red;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  letter-spacing: 0;
+  align-items: center;
+  margin: 0 auto;
+  border: 0;
+  padding: 12px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+  text-decoration: none;
+  padding-left: 10px;
+  
+  white-space: nowrap;
+}
+product-info div.product-info__description h6 button:hover{
+  background: white;
+  color: black;
+}
+.product-info div.product-info__description h7 {
+  position: absolute;
+  top: 0;
+  left: 1100px;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: 25px;
+  font-weight: bold;
+ padding-top: 600px;
+ display: inline;
+ 
+}
+.product-info div.product-info__description h8 {
+  position: absolute;
+  top: 0;
+  left: 1300px;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: 25px;
+  font-weight: bold;
+ padding-top: 300px;
+ display: inline;
+ 
+}
+
+.product-info div.product-info__description h9 {
+  position: absolute;
+  top: 0;
+  left: 1100px;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: 25px;
+  font-weight: bold;
+ padding-top: 120px;
+ display: inline;
+ text-align: center;
+}
+.product-info div.product-info__description h10 {
+  position: absolute;
+  top: 0;
+  left: 900px;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: 25px;
+  font-weight: bold;
+ padding-top: 200px;
+ display: inline;
+ 
+}
+.product-info div.product-info__description h10 button {
+  position: absolute;
+  top: 250px;
+  left: 300px;
+  background: red;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  letter-spacing: 0;
+  align-items: center;
+  margin: 0 auto;
+  border: 0;
+  padding: 12px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+  text-decoration: none;
+  padding-left: 10px;
+  
+  white-space: nowrap;
+}
+product-info div.product-info__description h10 button:hover{
+  background: white;
+  color: black;}

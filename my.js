@@ -28,7 +28,7 @@ let scrollImages = (canvasId, texts, imageFolder) => {
       const canvas = document.getElementById(canvasIdWithoutHash);
       const context = canvas.getContext("2d");
 
-      canvas.width = 2000;
+      canvas.width = 1900;
       canvas.height = 1000;
 
       //const frameCount = 199;
@@ -113,40 +113,95 @@ scrollImages(
   [
     {
       id: "product-info__description1",
-      start: 40,
-      end: 150,
+      start: 20,
+      end: 200,
       title: false
     },
     {
       id: "product-info__description2",
-      start: 200,
-      end: 300,
+      start: 20,
+      end: 200,
       title: false
     },
     {
       id: "product-info__description3",
-      start: 325,
-      end: 400,
+      start: 20,
+      end: 200,
       title: false
     },
     {
         id: "product-info__description4",
-        start: 410,
-        end: 480,
+        start: 20,
+        end: 200,
         title: false
       },
       {
         id: "product-info__description5",
-        start: 600,
-        end: 650,
+        start: 20,
+        end: 200,
         title: false
       },
       {
         id: "product-info__description6",
+        start: 20,
+        end: 200,
+        title: false
+      },
+      {
+        id: "product-info__description7",
+        start: 20,
+        end: 200,
+        title: false
+      },
+      {
+        id: "product-info__description8",
+        start: 20,
+        end: 200,
+        title: false
+      },
+      {
+        id: "product-info__description9",
+        start: 250,
+        end: 350,
+        title: false
+      },
+      {
+        id: "product-info__description10",
+        start: 375,
+        end: 400,
+        title: false
+      },
+      {
+        id: "product-info__description11",
+        start: 410,
+        end: 500,
+        title: false
+      },
+      {
+        id: "product-info__description12",
+        start: 610,
+        end: 660,
+        title: false
+      },
+      {
+        id: "product-info__description13",
         start: 700,
         end: 800,
         title: false
       },
+      {
+        id: "product-info__description14",
+        start: 700,
+        end: 800,
+        title: false
+      },
+      {
+        id: "product-info__description15",
+        start: 700,
+        end: 800,
+        title: false
+      },
+      
     {
       id: "product-title1",
       start: 10,
