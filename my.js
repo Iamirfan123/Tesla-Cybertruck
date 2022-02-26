@@ -161,7 +161,7 @@ scrollImages(
       },
       {
         id: "product-info__description9",
-        start: 250,
+        start: 325,
         end: 350,
         title: false
       },
@@ -173,7 +173,7 @@ scrollImages(
       },
       {
         id: "product-info__description11",
-        start: 410,
+        start: 450,
         end: 500,
         title: false
       },
@@ -186,7 +186,7 @@ scrollImages(
       {
         id: "product-info__description13",
         start: 700,
-        end: 800,
+        end: 740,
         title: false
       },
       {
@@ -201,6 +201,7 @@ scrollImages(
         end: 800,
         title: false
       },
+      
       
     {
       id: "product-title1",
