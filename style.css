@@ -6,7 +6,7 @@
 
 body {
   background: #000;
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
 }
 
 
@@ -26,6 +26,8 @@ canvas {
   transform: translate(-50%, -50%);
   opacity: 0;
   z-index: 1;
+  
+  
 }
 
 .product-content {
@@ -105,11 +107,11 @@ canvas {
   left: -150px;
   color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   letter-spacing: 0;
   line-height: 35px;
   padding-left: 10px;
-  padding-top: 650px;
+  padding-top: 350px;
   
   
 }
@@ -141,20 +143,22 @@ product-info div.product-info__description h2 button:hover{
 .product-info div.product-info__description h12 {
   position: absolute;
   top: 0;
+  color: red;
   left: -225px;
-  color: #ffffff;
+  
   font-family:  sans-serif;
   font-size: 25px;
   letter-spacing: 0;
   line-height: 35px;
   padding-left: 5px;
-  padding-top: 200px;
+ padding-top: 100px;
+  
   
   
 }
 .product-info div.product-info__description h12 h11{
   position: absolute;
-  top: 250px;
+  top: 150px;
   left: -75px;
   color: #ffffff;
   font-family:  sans-serif;
@@ -166,7 +170,7 @@ product-info div.product-info__description h2 button:hover{
 }
 .product-info div.product-info__description h12 button {
   position: absolute;
-  top: 400px;
+  top: 275px;
   left: 110px;
   background: red;
   color: white;
@@ -196,19 +200,19 @@ product-info div.product-info__description h2 button:hover{
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  padding-top: 520px;
-  padding-right: 225px;
+  padding-top: 425px;
+  padding-left: 400px;
   z-index: 0;
 }
 .product-info div.product-info__description h13 {
   position: absolute;
-  top: 150px;
-  left: 1000px;
+  top: 15px;
+  left: 500px;
   font-family:  sans-serif;
   font-size: 25px;
   letter-spacing: 0;
   line-height: 35px;
-  color: #ffffff;
+  color: red;
 
   
   
@@ -258,7 +262,7 @@ product-info div.product-info__description h2 button:hover{
   left: 50%;
   transform: translate(-50%,-50%);
   padding-bottom: 700px;
- padding-left: 650px;
+ padding-left: 250px;
   
  
   
@@ -268,13 +272,13 @@ product-info div.product-info__description h2 button:hover{
 
 .product-info div.product-info__description h14 {
   position: absolute;
-  top: 100px;
-  left: 900px;
+  top: 45px;
+  left: 450px;
   font-family:  sans-serif;
   font-size: 25px;
   letter-spacing: 0;
   line-height: 35px;
-  color: #ffffff;
+  color: red;
 
   
   
@@ -323,8 +327,8 @@ product-info div.product-info__description h2 button:hover{
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  padding-bottom: 700px;
- padding-left: 1750px;
+  padding-bottom: 350px;
+ padding-left: 800px;
   
  
   
@@ -333,14 +337,14 @@ product-info div.product-info__description h2 button:hover{
 .product-info div.product-info__description h3 {
   position: absolute;
   top: 0;
-  left: 450px;
+  left: 175px;
   color: #ffffff;
   font-family:  sans-serif;
-  font-size: 50px;
+  font-size: 35px;
   letter-spacing: 0;
   line-height: 35px;
   padding-left: 10px;
-  padding-bottom: 1000px;
+  padding-bottom: 1150px;
   text-align: center;
  
   
@@ -348,24 +352,24 @@ product-info div.product-info__description h2 button:hover{
 .product-info div.product-info__description p {
   position: absolute;
   top: 0;
-  left: 380px;
+  left: 125px;
   color: #ffffff;
   font-family:  sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   letter-spacing: 0;
   line-height: 35px;
   padding-left: 0;
- padding-top: 80px;
+ padding-top: 50px;
  display: inline;
  text-align: center;
 }
 .product-info div.product-info__description h4 {
   position: absolute;
   top: 0;
-  left: -100px;
+  left: -150px;
   color: #ffffff;
   font-family:  sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   letter-spacing: 0;
   line-height: 35px;
   
@@ -379,25 +383,25 @@ product-info div.product-info__description h2 button:hover{
   left: -300px;
   color: #ffffff;
   font-family:  sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   letter-spacing: 0;
   line-height: 25px;
   padding-left:-100px;
- padding-top: 300px;
+ padding-top: 200px;
  display: inline;
  text-align: center;
 }
 .product-info div.product-info__description h6 {
   position: absolute;
   top: 0;
-  left: 500px;
+  left: 200px;
   color: #ffffff;
   font-family:  sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   letter-spacing: 0;
   line-height: 25px;
   
- padding-top: 700px;
+ padding-top: 475px;
  display: inline;
  text-align: center;
 }
@@ -429,28 +433,28 @@ product-info div.product-info__description h6 button:hover{
 .product-info div.product-info__description h7 {
   position: absolute;
   top: 0;
-  left: 1100px;
+  left: 650px;
   color: #ffffff;
   font-family:  sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   letter-spacing: 0;
   line-height: 25px;
   font-weight: bold;
- padding-top: 600px;
+ padding-top: 375px;
  display: inline;
  
 }
 .product-info div.product-info__description h8 {
   position: absolute;
   top: 0;
-  left: 1300px;
+  left: 775px;
   color: #ffffff;
   font-family:  sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   letter-spacing: 0;
   line-height: 25px;
   font-weight: bold;
- padding-top: 300px;
+ padding-top: 225px;
  display: inline;
  
 }
@@ -458,10 +462,10 @@ product-info div.product-info__description h6 button:hover{
 .product-info div.product-info__description h9 {
   position: absolute;
   top: 0;
-  left: 1100px;
+  left: 625px;
   color: #ffffff;
   font-family:  sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   letter-spacing: 0;
   line-height: 25px;
   font-weight: bold;
@@ -472,20 +476,20 @@ product-info div.product-info__description h6 button:hover{
 .product-info div.product-info__description h10 {
   position: absolute;
   top: 0;
-  left: 700px;
-  color: #ffffff;
+  left: 300px;
+  color: red;
   font-family:  sans-serif;
   font-size: 25px;
   letter-spacing: 0;
   line-height: 25px;
   
- padding-top: 100px;
+ padding-top: 25px;
  display: inline;
  
 }
 .product-info div.product-info__description h10 h11{
   position: absolute;
-  top: 135px;
+  top: 75px;
   left: -50px;
   color: #ffffff;
   font-family:  sans-serif;
@@ -497,7 +501,7 @@ product-info div.product-info__description h6 button:hover{
 }
 .product-info div.product-info__description h10 button {
   position: absolute;
-  top: 250px;
+  top: 200px;
   left: 125px;
   background: red;
   color: white;
@@ -527,8 +531,8 @@ product-info div.product-info__description h6 button:hover{
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  padding-top: 150px;
-  padding-left: 2900px;
+  padding-top: 100px;
+  padding-left: 2250px;
   
  
   
@@ -537,21 +541,21 @@ product-info div.product-info__description h6 button:hover{
 .product-info div.product-info__description h15 {
   position: absolute;
   top: 0;
-  left: 800px;
-  color: #ffffff;
+  left: 450px;
+  color: red;
   font-family:  sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   letter-spacing: 0;
   line-height: 25px;
   
- padding-top: 100px;
+ padding-top: 50px;
  display: inline;
  
 }
 .product-info div.product-info__description h15 h11{
   position: absolute;
-  top: 135px;
-  left: 10px;
+  top: 95px;
+  left: 5px;
   color: #ffffff;
   font-family:  sans-serif;
   font-size: 15px;
@@ -562,7 +566,7 @@ product-info div.product-info__description h6 button:hover{
 }
 .product-info div.product-info__description h15 button {
   position: absolute;
-  top: 250px;
+  top: 200px;
   left: 200px;
   background: red;
   color: white;
@@ -592,8 +596,8 @@ product-info div.product-info__description h6 button:hover{
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  padding-top: 250px;
-  padding-left: 1500px;
+  padding-top: 200px;
+  padding-left: 800px;
   
  
   

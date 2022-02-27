@@ -161,14 +161,14 @@ scrollImages(
       },
       {
         id: "product-info__description9",
-        start: 325,
+        start: 300,
         end: 350,
         title: false
       },
       {
         id: "product-info__description10",
-        start: 375,
-        end: 400,
+        start: 360,
+        end: 410,
         title: false
       },
       {
