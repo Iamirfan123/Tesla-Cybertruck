@@ -2,20 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" name="viewport" content="width=device-width, intial scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./LomoWallChart-LT-Std-50_28697.ttf">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-     <title>Document</title>
+     <!--Boxicons CDN Link--> 
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Document</title>
+
+   
 <body style="background: black;">
     <div class="bg" style="background: black; overflow-y: scroll; scroll-snap-type: y mandatory;">
-        <canvas id="product-ezgif" style="width: 100%;"></canvas>
+    
+        <canvas id="product-ezgif" style="width: 100%;"  ></canvas>
         <div class="product-content">
           <div class="product-title" id="product-title1">
             <h1></h1>
           </div>
+          
           <div class="product-info " >
-            <div class="product-info__description" id="product-info__description1">
+            <div class="product-info__description " id="product-info__description1" >
               <br><h3>Digital Marketing </h3></br>
               <p>Think of its a vehicle that accelerates your buisiness</p>
             </div>
@@ -67,41 +74,92 @@
              
           </div>
         </div>
+        <footer id="nav-bar">
+          <div class="logo">
+          <a href="https://tatos.tech/"><div class="logo_det"><img src="./tatos.png" alt=""></div></a></div>
+      <ul>
+          <li><a href="https://tatos.tech/about.html">About us</a>
+
+              </li>
+              <li><a href="https://www.instagram.com/tatos.tech/?hl=en"><i class='bx bxl-instagram'></i></a>
+            
+              </li>
+              <li><a href="#"><i class='bx bxl-linkedin' ></i></a>
+            
+              </li>
+            </li>
+            <li><a href="#"><i class='bx bxl-github' ></i></a>
+          
+            </li>              
+      </ul>
+      
+      
+    </footer>
       </div>
-      <div class="spacer"></div>
-      <div class="bg">
-        <canvas id="product-ezgif2"></canvas>
-        <div class="product-content">
-          <div class="product-title" id="product-title1-2">
-            <h1></h1>
-          </div>
-          <div class="product-info">
-            <div class="product-info__description" id="product-info__description1-2">
-              <h2>Hole new Tesla Cyber truck </h2>
-            </div>
-            <div class="product-info__description" id="product-info__description2-2">
-              <h2>A customizable fit for all-day comfort.</h2>
-            </div>
-            <div class="product-info__description" id="product-info__description3-2">
-              <h2>Magic like you’ve never heard.</h2>
-            </div>
-            <div class="product-info__description" id="product-info__description3-2">
-                <h2>Magic like you’ve never heard.</h2>
-              </div>
-              <div class="product-info__description" id="product-info__description3-2">
-                <h2>Magic like you’ve never heard.</h2>
-              </div>
-              <div class="product-info__description" id="product-info__description3-2">
-                <h2>Magic like you’ve never heard.</h2>
-              </div>
-          </div>
-        </div>
-      </div>
+      <a class="gotopbtn" id="go-top" href="#" ><i class='bx bxs-up-arrow-alt'></i></a>
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollTrigger.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
       <script src="./my.js"></script>
+      <script src="./scroll-out.js"></script>
+      <script>
+        var lastScrollTop = 0;
+        navbar=document.getElementById("nav-bar");
+        window.addEventListener("scroll",function(){
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+         if(scrollTop > lastScrollTop){
+           navbar.style.top="-150px";
+         }
+         else{
+          navbar.style.top="525px";
+         }
+         lastScrollTop = scrollTop
+        })
+      </script>
+      <script>
+      window.onscroll = function () {
+    if (pageYOffset >= 500) {
+        document.getElementById('go-top').style.visibility = "visible";
+    } else {
+ document.getElementById('go-top').style.visibility = "hidden";
+    }
+};
+
+document.getElementById('go-top').onclick = function()
+{
+    scrollTo(document.body, 0, 0);
+}
+
+function scrollTo(element, to, duration) {
+    var start = element.scrollTop,
+        change = to - start,
+        currentTime = 0,
+        increment = 20;
+
+    var animateScroll = function(){        
+        currentTime += increment;
+        var val = Math.easeInOutQuad(currentTime, start, change, duration);                        
+        element.scrollTop = val; 
+        if(currentTime < duration) {
+            setTimeout(animateScroll, increment);
+        }
+    };
+    animateScroll();
+}
+
+//t = current time
+//b = start value
+//c = change in value
+//d = duration
+Math.easeInOutQuad = function (t, b, c, d) {
+    t /= d/2;
+    if (t < 1) return c/2*t*t + b;
+    t--;
+    return -c/2 * (t*(t-2) - 1) + b;
+};
+    </script>
+
 </body>
 </html>

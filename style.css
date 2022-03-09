@@ -7,7 +7,7 @@
 }
 
 body {
-  background: #000;
+  background: red;
   scroll-behavior: auto;
   
  
@@ -18,9 +18,10 @@ body {
   .bg {
     position: relative;
     height: 300vh;
-    
-    
+    background: red;
+   z-index: 1;
   }
+  
   
   #product-ezgif2 {
     border: 3px white solid;
@@ -32,8 +33,8 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    opacity: 0;
-    z-index: 1;
+    opacity: 2;
+    z-index: 2;
     overflow-y: hidden;
     height: 100vh;
     scroll-behavior: unset;
@@ -659,8 +660,183 @@ body {
     
     
   }
+  footer{
+    
+    position: fixed;
+    background: #2B2B2B;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0s;
+    padding: 40px 100px;
+    bottom: 0;
+    z-index: 10;
+    opacity: 10;
+   
+  
+    
+    
+}
+footer.sticky{
+  padding: 5px 100px;
+  background:transparent;
+  height: 100px;
+  display: flex;
+
+}
+
+
+footer .logo .logo_det img{
+    position: absolute;
+    left: 50px;
+    top: 20px;
+    
+   
+    height: 60px;
+    width: 60px;
+    
+    object-fit: cover;
+    border-radius: 50px;
+    cursor: pointer;}
+    footer ul{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        row-gap: 1px;
+        font-size: 0;
+       
+    }
+    footer ul li{
+        display: inline-block;
+        margin: 0;
+        position: relative;
+        list-style: none;
+        padding-right: 120px;
+        
+         
+        
+        
+    }
+    footer ul li:hover{
+        background: none;
+    }
+    
+    @keyframes animate{
+        0%{
+            opacity: 0;
+            transform: translateX(-100px);
+        }
+        70%{
+           
+            transform: translateX(-20px);
+        }
+        100%{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+footer ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 400px;
+    transition: 0.6s;
+    font-size: 20px;
+    float: right;
+   
+
+  
+ 
+   
+   
+   
+}
+footer ul li a:hover{
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: red;
+  letter-spacing: 2px;
+  font-weight: 400px;
+  transition: 0.6s;
+  font-size: 20px;
+  float: right;
+ 
+
+
+
+ 
+ 
+ 
+}
+ a:after{
+    content: "";
+    position: absolute;
+    background-color: red;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+    color: black;
+}
+a:hover{
+    color: black;
+}
+a:hover::after{
+    width: 100%;
+    
+}
+footer.sticky .logo .logo_det img{
+    position: absolute;
+    left: 50px;
+    top: 20px;
+    
+   
+    height: 60px;
+    width: 60px;
+    
+    object-fit: cover;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+footer.sticky ul li a{
+    color:white;
+}
+.gotopbtn{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: red;
+  bottom: 40px;
+  right:50px;
+
+  text-decoration: none;
+  text-align: center; line-height: 50px;
+  color: white;
+  font-size: 22px;
+  opacity: 10;
+  z-index: 10;
+  transition: all 0.5s;
+  
+}
+.gotopbtn:hover{
+  background: white;
+  color: black;
+}
+
+
   ::-webkit-scrollbar{
     width: 5px;
+    height: 5px;
     
   }
   ::-webkit-scrollbar-thumb{
@@ -670,6 +846,19 @@ body {
   }
   ::-webkit-scrollbar-thumb:hover{
     background:white;
+  }
+  ::-webkit-scrollbar.footer{
+    width: 5px;
+    height: 5px;
+    
+  }
+  ::-webkit-scrollbar-thumb.footer{
+    background:none;
+    border: 6px;
+    background: none;
+  }
+  ::-webkit-scrollbar-thumb:hover{
+    background:none;
   }
   
 
