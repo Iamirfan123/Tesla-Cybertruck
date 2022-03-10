@@ -13,6 +13,31 @@
 
    
 <body style="background: black;">
+ 
+<section class="bg" >
+  <canvas id="product-ezgif2" style="width: 100%; background: black;"></canvas>
+  <div class="product-content">
+    <div class="product-title-wrapper">
+      <div class="product-title" id="product-title1-2">
+        <h1></h1>
+      </div>
+    </div>
+
+    <div class="product-info">
+      <div class="product-info__description" id="product-info__description1-2">
+        <h2>ShapeShifter™ allows you to Interchange between goggles and sunglasses. No tradeoff between
+          comfort and functionality. 2</h2>
+      </div>
+      <div class="product-info__description" id="product-info__description2-2">
+        <h2>A customizable fit for all-day comfort. 2</h2>
+      </div>
+      <div class="product-info__description" id="product-info__description3-2">
+        <h2>Magic like you’ve never heard. 2</h2>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="spacer"></section>
     <div class="bg" style="background: black; overflow-y: scroll; scroll-snap-type: y mandatory;">
     
         <canvas id="product-ezgif" style="width: 100%;"  ></canvas>
@@ -110,10 +135,10 @@
         window.addEventListener("scroll",function(){
           var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
          if(scrollTop > lastScrollTop){
-           navbar.style.top="-150px";
+           navbar.style.bottom="-80px";
          }
          else{
-          navbar.style.top="525px";
+          navbar.style.bottom="0px";
          }
          lastScrollTop = scrollTop
         })
@@ -163,3 +188,34 @@ Math.easeInOutQuad = function (t, b, c, d) {
 
 </body>
 </html>
+<!--
+   <div class="spacer"></div>
+      <div class="bg">
+        <canvas id="product-ezgif2"></canvas>
+        <div class="product-content">
+          <div class="product-title" id="product-title1-2">
+            <h1></h1>
+          </div>
+          <div class="product-info">
+            <div class="product-info__description" id="product-info__description1-2">
+              <h2>Hole new Tesla Cyber truck </h2>
+            </div>
+            <div class="product-info__description" id="product-info__description2-2">
+              <h2>A customizable fit for all-day comfort.</h2>
+            </div>
+            <div class="product-info__description" id="product-info__description3-2">
+              <h2>Magic like you’ve never heard.</h2>
+            </div>
+            <div class="product-info__description" id="product-info__description3-2">
+                <h2>Magic like you’ve never heard.</h2>
+              </div>
+              <div class="product-info__description" id="product-info__description3-2">
+                <h2>Magic like you’ve never heard.</h2>
+              </div>
+              <div class="product-info__description" id="product-info__description3-2">
+                <h2>Magic like you’ve never heard.</h2>
+              </div>
+          </div>
+        </div>
+      </div>
+-->

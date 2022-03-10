@@ -18,15 +18,12 @@ body {
   .bg {
     position: relative;
     height: 300vh;
-    background: red;
+    background:none;
    z-index: 1;
   }
   
   
-  #product-ezgif2 {
-    border: 3px white solid;
-   
-  }
+  
   
   canvas {
     position: fixed;
@@ -673,8 +670,9 @@ body {
     transition: 0s;
     padding: 40px 100px;
     bottom: 0;
-    z-index: 10;
+    z-index: 15;
     opacity: 10;
+    
    
   
     
@@ -776,24 +774,7 @@ footer ul li a:hover{
  
  
 }
- a:after{
-    content: "";
-    position: absolute;
-    background-color: red;
-    height: 3px;
-    width: 0;
-    left: 0;
-    bottom: -10px;
-    transition: 0.5s;
-    color: black;
-}
-a:hover{
-    color: black;
-}
-a:hover::after{
-    width: 100%;
-    
-}
+
 footer.sticky .logo .logo_det img{
     position: absolute;
     left: 50px;
@@ -818,19 +799,22 @@ footer.sticky ul li a{
   background: red;
   bottom: 40px;
   right:50px;
-
+  transform: rotate(180deg);
   text-decoration: none;
   text-align: center; line-height: 50px;
   color: white;
   font-size: 22px;
-  opacity: 10;
+  opacity: 1;
   z-index: 10;
   transition: all 0.5s;
+  border-radius: 10px;
   
 }
 .gotopbtn:hover{
   background: white;
   color: black;
+  transform: rotate(360deg);
+  transition: 0.5s;
 }
 
 
@@ -847,19 +831,7 @@ footer.sticky ul li a{
   ::-webkit-scrollbar-thumb:hover{
     background:white;
   }
-  ::-webkit-scrollbar.footer{
-    width: 5px;
-    height: 5px;
-    
-  }
-  ::-webkit-scrollbar-thumb.footer{
-    background:none;
-    border: 6px;
-    background: none;
-  }
-  ::-webkit-scrollbar-thumb:hover{
-    background:none;
-  }
+  
   
 
 /*Moniter*/
